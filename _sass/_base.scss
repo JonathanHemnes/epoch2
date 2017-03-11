@@ -1,6 +1,18 @@
 @import "mixins";
 @import "variables";
 
+.nav {
+    position: fixed;
+    top: 0;
+    right: 5%;
+    display: inline-block;
+    a {
+        color: cornflowerblue;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+}
+
 .business-card {
     background: black;
     height: 100vh;
@@ -16,14 +28,13 @@
         color: $text-white;
     }
     background-image: url('/img/ECS_BRAND_PATTERN.JPG');
-    background-size: 600px;
+    background-size: 700px;
     background-repeat: repeat;
-    background-origin: center;
+    background-position: center;
     .logo-space {
         img {
             -webkit-filter: grayscale(1) invert(1);
             filter: grayscale(1) invert(1);
-            @include fadeIn( 0.75s);
             @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
                 width: 100%;
                 max-width: 350px;
@@ -31,25 +42,6 @@
             width: 60%;
             display: block;
             margin: auto;
-        }
-        .circle {
-            @include fadeIn( 1s);
-            display: flex;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            margin-top: 10vh;
-            border-radius: 50%;
-            background-color: white;
-            height: 75px;
-            width: 75px;
-            i {
-                color: black;
-            }
-             :hover {
-                color: #E5C100;
-            }
         }
     }
 }
