@@ -1,0 +1,52 @@
+@import "mixins";
+@import "variables";
+
+.business-card {
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    h1,
+    h2,
+    h3 {
+        color: $text-white;
+    }
+    .logo-space {
+        img {
+            -webkit-filter: grayscale(1) invert(1);
+            filter: grayscale(1) invert(1);
+            @include fadeIn( 0.75s);
+            @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
+                width: 100%;
+                max-width: 350px;
+            }
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+        .circle {
+            @include fadeIn( 1s);
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 10vh;
+            border-radius: 50%;
+            background-color: white;
+            height: 75px;
+            width: 75px;
+            i {
+                color: black;
+            }
+             :hover {
+                color: #E5C100;
+            }
+        }
+    }
+}

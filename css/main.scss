@@ -1,0 +1,23 @@
+---
+---
+
+$primary: black ;
+$secondary: gold ;
+$text-white: #ffffff;
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+        font-family: 'Cabin', sans-serif;
+    }
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "mixins",
+        "variables"
+;

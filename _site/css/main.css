@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Cabin', sans-serif; }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.business-card {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center; }
+  .business-card h1,
+  .business-card h2,
+  .business-card h3 {
+    color: #ffffff; }
+  .business-card .logo-space img {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    -moz-animation: fadeIn 0.75s;
+    -webkit-animation: fadeIn 0.75s;
+    -o-animation: fadeIn 0.75s;
+    -ms-animation: fadeIn 0.75s;
+    animation: fadeIn 0.75s;
+    width: 60%;
+    display: block;
+    margin: auto; }
+    @media screen and (min-width: 320px) and (max-width: 732px) {
+      .business-card .logo-space img {
+        width: 100%;
+        max-width: 350px; } }
+  .business-card .logo-space .circle {
+    -moz-animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 50%;
+    background-color: white;
+    height: 75px;
+    width: 75px; }
+    .business-card .logo-space .circle i {
+      color: black; }
+    .business-card .logo-space .circle :hover {
+      color: #E5C100; }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
