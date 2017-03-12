@@ -27,7 +27,7 @@
     h3 {
         color: $text-white;
     }
-    background-image: url('/img/ECS_BRAND_PATTERN.JPG');
+    background-image: $background-pattern-url;
     background-size: 100%;
     background-repeat: repeat;
     background-position: center;
