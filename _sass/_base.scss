@@ -1,20 +1,46 @@
 @import "mixins";
 @import "variables";
 
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 26px;
+}
+h4 {
+    font-size: 20px;
+}
+
+h1, h2 h3, h4, p, li {
+    color: $white;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        background: transparent;
+        font-family: 'Roboto', sans-serif;
+    }
+
 .nav {
     position: fixed;
     top: 0;
     right: 5%;
     display: inline-block;
     a {
-        color: cornflowerblue;
+        color: $white;
         text-decoration: none;
         margin-left: 5px;
     }
 }
 
 .business-card {
-    background: black;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -33,8 +59,8 @@
     background-position: center;
     .logo-space {
         img {
-            -webkit-filter: grayscale(1) invert(1);
-            filter: grayscale(1) invert(1);
+            -webkit-filter: grayscale(0.95) invert(1);
+            filter: grayscale(0.95) invert(1);
             @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
                 width: 100%;
                 max-width: 350px;
@@ -46,36 +72,52 @@
     }
 }
 
-.intro {
-    background: white;
-    height: 400px;
-}
-
-.ethos {
-    background: gold;
-    height: 400px;
-}
-
-.adaptive-solutions {
-    background: black;
-    height: 400px;
-    h1 {
-        color: white;
+.section {
+    width: 66%;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    h3 {
+        color: $white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h4 {
+        text-align: center;
     }
 }
 
+.intro {
+    
+    
+    .content{
+        display: flex;
+        p {
+            width: 50%;
+            padding: 15px;
+        }
+    }
+
+    margin-top: 15px;
+}
+
+.ethos {
+}
+
+.adaptive-solutions {
+    
+}
+
 .services {
-    background: white;
-    height: 400px;
 }
 
 .call-to-action {
-    background: orangered;
-    height: 400px;
+    .address {
+        text-align: center;
+    }
 }
 
 .footer {
-    background: white;
     text-align: center;
     a {
         text-decoration: none;

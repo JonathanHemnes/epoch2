@@ -4,17 +4,11 @@
 $primary: black ;
 $secondary: gold ;
 $text-white: #ffffff;
-$background-pattern-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN.png');
+$background-pattern-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN.jpg');
 
-* {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        vertical-align: baseline;
-        background: transparent;
-        font-family: 'Cabin', sans-serif;
-    }
+body {
+    background: black;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
