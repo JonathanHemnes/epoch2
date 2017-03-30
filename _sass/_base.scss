@@ -83,27 +83,45 @@ li {
     background-position: center;
 }
 
+.second-separator {
+    height: 250px;
+    background-image: $background-pattern-url;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.third-separator {
+    height: 250px;
+    background: $gold-foil-2-url;
+    background-size: 200%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+}
+
 .angle-before {
     @include angle(before, false, 6deg);
-    top: -30px;
+    top: -40px;
     background: white;
 }
 
 .angle-before-flip {
     @include angle(before, true, 6deg);
-    top: -30px;
+    top: -40px;
     background: white;
 }
 
 .angle-after {
     @include angle(after, false, 6deg);
-    top: 30px;
+    top: 40px;
     background: white;
 }
 
 .angle-after-flip {
     @include angle(after, true, 6deg);
-    top: 30px;
+    top: 40px;
     background: white;
 }
 
@@ -125,12 +143,8 @@ li {
             border-top: 1px solid $gold;
         }
     }
-}
 
-.intro {
-    @include angle(before, false, 4deg);
-    
-    .content {
+     .content {
         width: 60%;
         margin: auto;
         margin-bottom: 60px;
@@ -138,6 +152,10 @@ li {
             margin-bottom: 20px;
         }
     }
+}
+
+.intro {
+    @include angle(before, false, 4deg);
     
     margin-top: 15px;
 }
