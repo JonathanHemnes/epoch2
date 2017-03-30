@@ -1,32 +1,38 @@
 @import "mixins";
 @import "variables";
-
 h1 {
     font-size: 36px;
 }
+
 h2 {
     font-size: 30px;
 }
+
 h3 {
     font-size: 26px;
 }
+
 h4 {
     font-size: 20px;
 }
 
-h1, h2 h3, h4, p, li {
-    color: $white;
+h1,
+h2 h3,
+h4,
+p,
+li {
+    color: black;
 }
 
 * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        vertical-align: baseline;
-        background: transparent;
-        font-family: 'Roboto', sans-serif;
-    }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+}
 
 .nav {
     position: fixed;
@@ -34,7 +40,6 @@ h1, h2 h3, h4, p, li {
     right: 5%;
     display: inline-block;
     a {
-        color: $white;
         text-decoration: none;
         margin-left: 5px;
     }
@@ -48,15 +53,12 @@ h1, h2 h3, h4, p, li {
     align-content: center;
     align-items: center;
     justify-content: center;
-    h1,
-    h2,
-    h3 {
-        color: $text-white;
-    }
     background-image: $background-pattern-url;
     background-size: 100%;
+    background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
+    
     .logo-space {
         img {
             -webkit-filter: grayscale(0.95) invert(1);
@@ -72,46 +74,82 @@ h1, h2 h3, h4, p, li {
     }
 }
 
+.separator {
+    height: 250px;
+    background: $gold-foil-1-url;
+    background-size: 200%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.angle-before {
+    @include angle(before, false, 6deg);
+    top: -30px;
+    background: white;
+}
+
+.angle-before-flip {
+    @include angle(before, true, 6deg);
+    top: -30px;
+    background: white;
+}
+
+.angle-after {
+    @include angle(after, false, 6deg);
+    top: 30px;
+    background: white;
+}
+
+.angle-after-flip {
+    @include angle(after, true, 6deg);
+    top: 30px;
+    background: white;
+}
+
 .section {
-    width: 66%;
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    h3 {
-        color: $white;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    h4 {
-        text-align: center;
+    
+    .header {
+        h3, h4 {
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+        
+        hr {
+            width: 30%;
+            color: $gold;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-top: 1px solid $gold;
+        }
     }
 }
 
 .intro {
+    @include angle(before, false, 4deg);
     
-    
-    .content{
-        display: flex;
+    .content {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 60px;
         p {
-            width: 50%;
-            padding: 15px;
+            margin-bottom: 20px;
         }
     }
-
+    
     margin-top: 15px;
 }
 
-.ethos {
-}
+.ethos {}
 
-.adaptive-solutions {
-    
-}
+.adaptive-solutions {}
 
-.services {
-}
+.services {}
 
 .call-to-action {
+    
     .address {
         text-align: center;
     }
@@ -119,6 +157,7 @@ h1, h2 h3, h4, p, li {
 
 .footer {
     text-align: center;
+    
     a {
         text-decoration: none;
     }

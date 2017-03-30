@@ -4,10 +4,12 @@
 $primary: black ;
 $secondary: gold ;
 $text-white: #ffffff;
-$background-pattern-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN.jpg');
+$background-pattern-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN_1.jpg');
+$gold-foil-1-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN_2.jpg');
+$gold-foil-2-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN_3.jpg');
 
 body {
-    background: black;
+    background: white;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
