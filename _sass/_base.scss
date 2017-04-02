@@ -61,8 +61,8 @@ li {
     
     .logo-space {
         img {
-            -webkit-filter: grayscale(0.95) invert(1);
-            filter: grayscale(0.95) invert(1);
+            -webkit-filter: grayscale(1) invert(1);
+            filter: grayscale(1) invert(1);
             @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
                 width: 100%;
                 max-width: 350px;
@@ -70,6 +70,21 @@ li {
             width: 60%;
             display: block;
             margin: auto;
+        }
+    }
+
+    .sub-heading {
+        margin-top: 70px;
+        text-align: center;
+        h3,h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        h4 {
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border: 1px solid white;
         }
     }
 }
@@ -83,22 +98,13 @@ li {
     background-position: center;
 }
 
-.second-separator {
-    height: 250px;
-    background-image: $background-pattern-url;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
-}
-
 .third-separator {
-    height: 250px;
-    background: $gold-foil-2-url;
-    background-size: 200%;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
+    // height: 100px;
+    // background: $gold-foil-2-url;
+    // background-size: 200%;
+    // background-attachment: fixed;
+    // background-repeat: repeat;
+    // background-position: center;
 }
 
 .angle-before {
@@ -130,23 +136,33 @@ li {
     .header {
         h3, h4 {
             text-align: center;
-            margin-top: 35px;
+            margin-top: 25px;
             margin-bottom: 15px;
         }
         
         hr {
             width: 30%;
-            color: $gold;
+            color: $black;
             margin: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            border-top: 1px solid $gold;
+            
+
+            &.thick {
+                margin-top: 30px;
+                border-top: 4px solid black;
+                // size: 5;
+            }
+
+            &.thin {
+                margin-top: 10px;
+                margin-bottom: 30px;
+                border-top: 1px solid black;
+                // size: 2;
+            }
+            
         }
     }
 
      .content {
-        width: 60%;
-        margin: auto;
         margin-bottom: 60px;
         p {
             margin-bottom: 20px;
@@ -158,13 +174,66 @@ li {
     @include angle(before, false, 4deg);
     
     margin-top: 15px;
+    
+    .content {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+    
+        .left {
+            width: 50%;
+            padding: 15px;
+            background: $white;
+        }
+
+        .right {
+            width: 50%;
+            padding: 15px;
+        }
+    }
 }
 
-.ethos {}
+.ethos {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
-.adaptive-solutions {}
+.adaptive-solutions {
+    padding-top: 30px;
+    padding-bottom: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-image: $background-pattern-url;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
 
-.services {}
+    h2,h3,h4,h5,p {
+        color: white;
+    }
+
+    .header {
+        hr {
+            &.thick {
+                border-top: 3px solid white;
+            }
+            &.thin {
+                border-top: 1px solid white;
+            }
+        }
+    }
+}
+
+.services {
+    background: $white;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
 
 .call-to-action {
     
