@@ -226,6 +226,7 @@ li {
     .ethos-subcontent {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         margin-top: 15px;
         h4 {
