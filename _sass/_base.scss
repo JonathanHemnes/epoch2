@@ -36,12 +36,33 @@ li {
 
 .nav {
     position: fixed;
-    top: 0;
-    right: 5%;
+    top: 5%;
+    left: 5%;
     display: inline-block;
     a {
         text-decoration: none;
         margin-left: 5px;
+    }
+    img {
+        width: 30px;
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+    }
+}
+
+.nav-pill {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid $white;
+    border-radius: 25px;;
+    a {
+        color: white;
+        text-decoration: none;
     }
 }
 
