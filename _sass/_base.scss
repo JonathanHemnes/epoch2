@@ -222,33 +222,34 @@ li {
     h4 {
         text-align: center;
     }
+}
 
-    .ethos-subcontent {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 15px;
-        h4 {
+.ethos-subcontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    h5 {
+        text-align: center;
+        margin-bottom: 7px;
+    } 
+
+    .ethos-box {
+        width: 150px;
+        margin: 15px;
+        //padding: 15px;
+        img {
+            width: 35px;
+            margin: auto;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .boxed-content {
+            //padding-top: 15px;
+            //border: 1px solid black;
+            height: 125px;
             text-align: center;
-        } 
-
-        .ethos-box {
-            width: 150px;
-            margin: 15px;
-            //padding: 15px;
-            img {
-                width: 35px;
-                margin: auto;
-                margin-bottom: 15px;
-                display: block;
-            }
-            .boxed-content {
-                //padding-top: 15px;
-                //border: 1px solid black;
-                height: 125px;
-                text-align: center;
-            }
         }
     }
 }
@@ -288,6 +289,14 @@ li {
     padding-right: 25px;
     padding-bottom: 15px;
     padding-top: 15px;
+
+    .ethos-box {
+        width: 300px;
+    }
+
+    h4 {
+        text-align: center;
+    }
 }
 
 .call-to-action {
