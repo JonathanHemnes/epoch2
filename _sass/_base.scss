@@ -210,9 +210,11 @@ li {
     .content {
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 30px;
         display: flex;
     
         .left {
+            margin-top: -30px;
             width: 50%;
             padding: 15px;
             background: $white;
