@@ -59,7 +59,7 @@ li {
     padding-left: 25px;
     padding-right: 25px;
     border: 1px solid $white;
-    border-radius: 25px;;
+
     a {
         color: white;
         text-decoration: none;
@@ -124,7 +124,7 @@ li {
 .separator {
     height: 250px;
     background: $gold-foil-1-url;
-    background-size: 200%;
+    background-size: 300%;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
@@ -304,11 +304,30 @@ li {
     padding-top: 15px;
 
     .ethos-box {
-        width: 300px;
+        min-width: 300px;
+        width: 27%;
+
+        img {
+            display: none;
+        }
+
+        .boxed-content {
+            display: none;
+        }
     }
 
     h4 {
         text-align: center;
+    }
+
+    h4.clicker {
+        padding: 20px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+    }
+    h4.clicker:hover {
+        background: $gold;
+        color: $white;
     }
 }
 
@@ -331,13 +350,4 @@ li {
     a {
         text-decoration: none;
     }
-}
-
-.hidden {
-    visibility: hidden;
-    transition: visibility 0s, opacity 0.5s linear;
-}
-.visible {
-    visibility: visible;
-    transition: visibility 0s, opacity 0.5s linear;
 }
