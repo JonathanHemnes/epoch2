@@ -313,6 +313,12 @@ li {
 }
 
 .call-to-action {
+    height: 750px;
+    background-image: $background-clipped-url;
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: top;
     
     .address {
         text-align: center;
@@ -325,4 +331,13 @@ li {
     a {
         text-decoration: none;
     }
+}
+
+.hidden {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.visible {
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s linear;
 }
