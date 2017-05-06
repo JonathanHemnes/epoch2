@@ -234,7 +234,7 @@ li {
             margin-top: 15px;
             margin-bottom: 15px;
             padding: 25px;
-            background-color: rgba(216,212,203, 0.3);
+            background-color: rgba(216,212,203, 0.7);
             text-align: center;
             font-size: 20px;
 
@@ -301,7 +301,6 @@ li {
     .ethos-box {
         width: 200px;
         margin: 15px;
-        //padding: 15px;
         img {
             width: 35px;
             margin: auto;
@@ -309,8 +308,6 @@ li {
             display: block;
         }
         .boxed-content {
-            //padding-top: 15px;
-            //border: 1px solid black;
             height: 125px;
             text-align: center;
         }
@@ -319,27 +316,35 @@ li {
 
 .adaptive-solutions {
     padding-top: 30px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
     padding-left: 25px;
     padding-right: 25px;
-    background-image: $background-pattern-url;
-    background-size: 100%;
+    background-image: $gold-weave;
+    background-size: 400%;
     background-attachment: fixed;
+    @media screen and (min-width: $screen-sm) {
+        background-size: 100%;
+        background-attachment: scroll;
+    }
     background-repeat: repeat;
     background-position: center;
 
-    h2,h3,h4,h5,p {
-        color: white;
+    .white-back {
+        background-color: rgba(216,212,203, 0.7);
+        padding: 5px;
+        @media screen and (min-width: $screen-sm) {
+            display: block;
+            margin-left:25%;
+            margin-right:25%;
+            padding: 10px;
+        }
     }
 
-    .header {
-        hr {
-            &.thick {
-                border-top: 3px solid white;
-            }
-            &.thin {
-                border-top: 1px solid white;
-            }
+    .content {
+        text-align: center;
+        .emphasis {
+            font-style: italic;
+            font-size: 24px;
         }
     }
 }
