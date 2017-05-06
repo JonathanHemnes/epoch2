@@ -351,8 +351,10 @@ li {
 
 .services {
     background: $white;
-    margin-left: 25px;
-    margin-right: 25px;
+    @media screen and (min-width: $screen-sm) {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;
@@ -376,7 +378,7 @@ li {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
         .ethos-box {
             min-width: 300px;
             width: 23%;
