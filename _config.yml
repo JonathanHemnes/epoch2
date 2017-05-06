@@ -31,3 +31,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+sass:
+  style: compressed
+  sass_dir: _sass
