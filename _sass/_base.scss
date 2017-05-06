@@ -168,7 +168,6 @@ li {
     .header {
         h3, h4 {
             text-align: center;
-            margin-top: 25px;
             margin-bottom: 15px;
         }
         
@@ -193,36 +192,43 @@ li {
             
         }
     }
-
-     .content {
-        margin-bottom: 60px;
-        p {
-            margin-bottom: 20px;
-        }
-    }
 }
 
 .intro {
-    @include angle(before, false, 4deg);
-    
-    margin-top: 15px;
+    background-image: $man-jump;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+
+    .header {
+        @include angle(before, true, 3deg);
+        background: $white;
+        margin-left: 50px; 
+        margin-right: 50px;
+        margin-top: -15px;
+        padding-bottom: 10px;
+    }
     
     .content {
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 30px;
-        display: flex;
+        padding-bottom: 15px;
     
-        .left {
-            margin-top: -30px;
-            width: 50%;
-            padding: 15px;
-            background: $white;
-        }
+        p {
+            margin-left: 50%;
+            margin-right: 15%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 25px;
+            background-color: rgba(216,212,203, 0.3);
+            text-align: center;
+            font-size: 20px;
 
-        .right {
-            width: 50%;
-            padding: 15px;
+            .emphasis {
+                font-style: italic;
+                font-size: 24px;
+            }
         }
     }
 }
