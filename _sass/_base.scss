@@ -316,7 +316,7 @@ li {
 
 .adaptive-solutions {
     padding-top: 30px;
-    padding-bottom: 200px;
+    padding-bottom: 250px;
     padding-left: 25px;
     padding-right: 25px;
     background-image: $gold-weave;
@@ -334,8 +334,8 @@ li {
         padding: 5px;
         @media screen and (min-width: $screen-sm) {
             display: block;
-            margin-left:25%;
-            margin-right:25%;
+            margin-left: 20%;
+            margin-right: 20%;
             padding: 10px;
         }
     }
@@ -358,16 +358,37 @@ li {
     padding-bottom: 15px;
     padding-top: 15px;
 
-    .ethos-box {
-        min-width: 300px;
-        width: 27%;
-
-        img {
-            display: none;
+    .content {
+        text-align: center;
+        @media screen and (min-width: $screen-sm) {
+            display: block;
+            margin-left: 15%;
+            margin-right: 15%;
         }
+        
+        p {
+            margin-bottom: 30px;
+        }
+    }
 
-        .boxed-content {
-            display: none;
+    .subcontent {
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .ethos-box {
+            min-width: 300px;
+            width: 23%;
+            margin-right: 20px;
+            img {
+                display: none;
+            }
+
+            .boxed-content {
+                display: none;
+                height: 200px;
+            }
         }
     }
 
