@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background-image: $gold-foil-2-url;
-    background-size: 200%;
+    background-size: 300%;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
@@ -49,6 +49,49 @@
             &:hover {
                 color: $white;
             }
+        }
+    }
+}
+
+.about-us {
+    .header {
+        @include angle(before, true, 3deg);
+        background: $white;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        @media screen and (min-width: $screen-sm) {
+            margin-left: 50px; 
+            margin-right: 50px;
+            padding-bottom: 10px;
+        }
+    }
+    
+    .content {
+        @media screen and (min-width: $screen-sm) {
+            display: flex;
+        }
+        
+        .emphasis {
+            font-style: italic;
+            font-size: 24px;
+        }
+
+        .words {
+            width: 100%;
+            @media screen and (min-width: $screen-sm) {
+                width: 50%;
+                padding: 30px;
+            }
+        }
+        .photo {
+            @media screen and (min-width: $screen-sm) {
+                width: 50%;
+                margin-top: -25px;
+                
+            }
+            img {
+                    width: 100%;
+                }
         }
     }
 }
