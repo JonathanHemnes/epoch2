@@ -461,9 +461,13 @@ li {
 }
 
 .footer {
+    padding: 10px;
+    background: black;
+    p {color: white;}
     text-align: center;
     
     a {
+        color: white;
         text-decoration: none;
     }
 }
