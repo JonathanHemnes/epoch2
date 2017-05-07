@@ -1,0 +1,54 @@
+.about-splash {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-image: $gold-foil-2-url;
+    background-size: 200%;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    
+    .logo-space {
+        img {
+            -webkit-filter: grayscale(1) invert(1);
+            filter: grayscale(1) invert(1);
+            @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
+                width: 100%;
+                max-width: 350px;
+            }
+            width: 60%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .sub-heading {
+        margin-top: 70px;
+        text-align: center;
+        h3,h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        h4 {
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border: 1px solid white;
+            &:hover {
+                color: $white;
+                border: 1px solid $white;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
