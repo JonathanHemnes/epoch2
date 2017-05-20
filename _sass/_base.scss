@@ -81,6 +81,13 @@ li {
         -webkit-filter: grayscale(1) invert(1);
         filter: grayscale(1) invert(1);
     }
+
+    &.about {
+        img {
+            -webkit-filter: grayscale(1) invert(0);
+            filter: grayscale(1) invert(0);
+        }
+    }
 }
 
 .nav-pill {
@@ -99,10 +106,23 @@ li {
         font-size: 20px;
     }
     &:hover {
-        border: 1px solid $gold;
+        border-color: $gold;
 
         a {
             color: $gold;
+        }
+    }
+    &.about {
+        border-color: black;
+        a  { 
+            color: black;
+        } 
+        &:hover {
+            border-color: white;
+
+            a {
+                color: white;
+            }
         }
     }
 }

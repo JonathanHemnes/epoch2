@@ -7,14 +7,16 @@
     align-items: center;
     justify-content: center;
     background-image: $gold-foil-2-url;
-    background-size: 300%;
+    background-size: 120vw;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
+    @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
+        background-size: 400vw;
+    }
+    
     .logo-space {
         img {
-            -webkit-filter: grayscale(1) invert(1);
-            filter: grayscale(1) invert(1);
             @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
                 width: 100%;
                 max-width: 350px;
@@ -24,19 +26,19 @@
             margin: auto;
         }
     }
+
     .sub-heading {
         margin-top: 70px;
         text-align: center;
-        h3,
-        h4 {
-            color: white;
-            margin-bottom: 20px;
+        h3,h4 {
+            color: black;
+            margin-bottom: 10px;
         }
-        h4 {
-            padding: 20px;
-            width: 300px;
+        h4.border {
+            font-size: 24px;
+            padding: 10px;
             margin: auto;
-            border: 1px solid white;
+            border: 1px solid black;
             &:hover {
                 color: $white;
                 border: 1px solid $white;
@@ -44,7 +46,7 @@
         }
         a {
             text-decoration: none;
-            color: white;
+            color: black;
             &:hover {
                 color: $white;
             }
@@ -54,7 +56,7 @@
 
 .about-us {
     .header {
-        @include angle(before, true, 3deg);
+        @include angle(before, true, 4deg);
         background: $white;
         padding-top: 15px;
         padding-bottom: 10px;
@@ -65,6 +67,10 @@
         }
     }
     .content {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 15px;
         @media screen and (min-width: $screen-sm) {
             display: flex;
         }
@@ -80,9 +86,11 @@
             }
         }
         .photo {
+            margin-top: 25px;
             @media screen and (min-width: $screen-sm) {
                 width: 50%;
                 margin-top: -25px;
+
             }
             img {
                 width: 100%;
@@ -106,7 +114,7 @@
     .content {
         @media screen and (min-width: $screen-sm) {
             display: block;
-            width: 70%;
+            width: 80%;
             min-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -141,6 +149,8 @@
             .headshot {
                 @media screen and (min-width: $screen-sm) {
                     width: 40%;
+                    margin-right: 40px;
+                    margin-left: 40px;
                 }
                 img {
                     width: 100%;
@@ -166,9 +176,18 @@
                         display: none;
                     }
                 }
+                
+                p {
+                    @media screen and (max-width: $screen-sm) {
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+
                 .name-box {
                     @media screen and (max-width: $screen-sm) {
                         display: flex;
+                        padding: 30px;
                         img {
                             margin-top: 15px;
                             margin-left: 30px;
@@ -181,6 +200,7 @@
 }
 
 .contact {
+    @include angle(before, true, 5deg);
     background: $white;
     margin-left: 15px;
     margin-right: 15px;
@@ -217,8 +237,16 @@
             width: 60%;
             margin: auto;
 
+            label {
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
             input {
                 background: $gold;
+                margin-bottom: 25px;
+                border-color: white;
             }
 
             .send-button {
@@ -227,6 +255,14 @@
                 margin-top: 30px;
                 margin-bottom: 20px;
                 background: white;
+                font-size: 24px;
+                font-weight: bold;
+                height: 50px;
+                border-color: $gold;
+                &:hover {
+                    color: $gold;
+                }
+
             }
         }
     }
