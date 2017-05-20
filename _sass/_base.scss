@@ -21,6 +21,13 @@ h4 {
         font-size: 20px;
     }
 }
+
+h5 {
+    font-size: 24px;
+    @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
+        font-size: 20px;
+    }
+}
 p {
     font-size: 20px;
     @media screen and (max-width: $screen-sm) {
@@ -32,6 +39,13 @@ p {
         @media screen and (max-width: $screen-sm) {
             font-size: 20px;
         }
+    }
+}
+
+li {
+    font-size: 20px;
+    @media screen and (max-width: $screen-sm) {
+        font-size: 16px;
     }
 }
 
@@ -283,6 +297,9 @@ li {
     }
 
     .content {
+        @media screen and (min-width: $screen-sm) {
+            margin-bottom: 30px;
+        }
         .mantra {
             display: flex;
             justify-content: center;
@@ -347,10 +364,10 @@ li {
     padding-left: 25px;
     padding-right: 25px;
     background-image: $gold-weave;
-    background-size: 400%;
+    background-size: 500%;
     background-attachment: fixed;
     @media screen and (min-width: $screen-sm) {
-        background-size: 100%;
+        background-size: 400%;
         background-attachment: scroll;
     }
     background-repeat: repeat;
@@ -359,6 +376,7 @@ li {
     .white-back {
         background-color: rgba(216,212,203, 0.7);
         padding: 5px;
+        margin-top: 30px;
         @media screen and (min-width: $screen-sm) {
             display: block;
             margin-left: 20%;
@@ -367,7 +385,21 @@ li {
         }
     }
 
+    .header {
+        padding-top: 15px;
+        @media screen and (min-width: $screen-sm) {
+            padding: 30px;
+        }
+    }
+
+
     .content {
+        padding-bottom: 30px;
+        @media screen and (min-width: $screen-sm) {
+            padding-left: 30px;
+            padding-right: 30px;
+         }
+
         text-align: center;
         .emphasis {
             font-style: italic;
@@ -378,25 +410,33 @@ li {
 
 .services {
     background: $white;
+    padding-top: 40px;
     @media screen and (min-width: $screen-sm) {
+        margin-top: 40px;
         margin-left: 25px;
         margin-right: 25px;
+        padding-bottom: 135px;
+        padding-top: 15px;
     }
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 45px;
+    
 
     .content {
         text-align: center;
         @media screen and (min-width: $screen-sm) {
             display: block;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
         
         p {
-            margin-bottom: 30px;
+            margin-top: 10px;
+            margin-bottom: 35px;
+        }
+        h4 {
+            margin-bottom: 20px;
         }
     }
 
@@ -409,42 +449,56 @@ li {
         .ethos-box {
             min-width: 300px;
             width: 23%;
-            margin-right: 20px;
+
+            @media screen and (min-width: $screen-sm) {
+                margin-right: 50px;
+            }
+
+            ul {
+                margin-left: 30px;
+                text-align: left;
+            }
             img {
                 display: none;
             }
             > i {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
                 margin-bottom: 5px;
             }
 
             .boxed-content {
                 display: none;
-                height: 200px;
             }
         }
     }
 
-    h4 {
+    h5 {
         text-align: center;
     }
 
-    h4.clicker {
+    h5.clicker {
         padding: 20px;
         border: 2px solid black;
         margin-bottom: 20px;
     }
-    h4.clicker:hover {
+    h5.clicker:hover {
         background: $gold;
         color: $white;
     }
 }
 
 .call-to-action {
-    // height: 750px;
+    margin-top: -150px;
+    z-index: 1;
+    position: relative;
     background-image: $background-clipped-url;
     background-size: 100vw;
+    padding-bottom: 100px;
     @media screen and (max-width: $screen-sm) {
         background-size: 400%;
+        margin-top: -75px;
     }
 
     background-repeat: no-repeat;
@@ -452,49 +506,69 @@ li {
     text-align: center;
 
     p {
-        color: white;
+        padding-top: 22px;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: block;
+        .emphasis {
+            font-size: 25px;
+        }
     }
 
     .header {
         padding-top: 30px;
         @media screen and (min-width: $screen-sm) {
             padding-top: 150px;
-        }
-    }
-    .contact-us {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        @media screen and (min-width: $screen-sm) {
-            margin-top: 200px;
-        }
-        
-        .address {
-            text-align: center;
-            width: 30%;
-            @media screen and (max-width: $screen-sm) {
-                width: 200px;
-                width: 100%;
-            }
-            a, p {
-                text-decoration: none;
-                color: black; 
-                font-size: 20px;
+            h4 {
+                margin-top: 40px;
             }
         }
     }
     
-    
+}
+.contact-us {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    .address {
+        text-align: center;
+        width: 30%;
+        @media screen and (max-width: $screen-sm) {
+            width: 200px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        a, p {
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+        }
+    }
+
+    .icons {
+        margin-top: 10px;
+        a {
+            text-decoration: none;
+            color: black; 
+            margin-right: 5px;
+        }
+    }
 }
 
 .footer {
     padding: 10px;
     background: black;
-    p {color: white;}
     text-align: center;
-    
-    a {
+
+    a, p {
         color: white;
         text-decoration: none;
+        font-size: 18px;
+        @media screen and (max-width: $screen-sm) {
+            font-size: 15px;
+        }
     }
 }
