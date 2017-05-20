@@ -387,7 +387,7 @@ li {
     background-size: 500%;
     background-attachment: fixed;
     @media screen and (min-width: $screen-sm) {
-        background-size: 400%;
+        background-size: 100%;
         background-attachment: scroll;
     }
     background-repeat: repeat;
