@@ -57,15 +57,23 @@ li {
     position: absolute;
     top: 5%;
     right: 5%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid $white;
 
     a {
         color: white;
         text-decoration: none;
+        font-size: 20px;
+    }
+    &:hover {
+        border: 1px solid $gold;
+
+        a {
+            color: $gold;
+        }
     }
 }
 
@@ -102,11 +110,10 @@ li {
         text-align: center;
         h3,h4 {
             color: white;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         h4 {
-            padding: 20px;
-            width: 300px;
+            padding: 15px;
             margin: auto;
             border: 1px solid white;
             &:hover {
