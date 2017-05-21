@@ -33,5 +33,17 @@
         });
     });
 
+    window.initMap = function() {
+        // 40.0260352,-105.2450594,
+        var epochLocation = {lat: 40.0260352, lng: -105.2450594};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: epochLocation
+        });
+        var marker = new google.maps.Marker({
+          position: epochLocation,
+          map: map
+        });
+    }
 
 })();

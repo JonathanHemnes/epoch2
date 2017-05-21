@@ -163,7 +163,7 @@ li {
             margin-bottom: 10px;
         }
         h4.border {
-            font-size: 24px;
+            //font-size: 24px;
             padding: 10px;
             margin: auto;
             border: 1px solid white;
@@ -183,7 +183,7 @@ li {
 }
 
 .separator {
-    height: 250px;
+    height: 150px;
     background: $gold-foil-1-url;
     background-size: 300%;
     background-attachment: fixed;
@@ -358,6 +358,7 @@ li {
         margin-right: 15px;
         @media screen and (min-width: $screen-sm) {
             margin-right: 50px;
+            margin-left: 27px;
         }
         img {
             height: 63px;
@@ -380,7 +381,7 @@ li {
 
 .adaptive-solutions {
     padding-top: 30px;
-    padding-bottom: 250px;
+    padding-bottom: 140px;
     padding-left: 25px;
     padding-right: 25px;
     background-image: $gold-weave;
@@ -389,6 +390,7 @@ li {
     @media screen and (min-width: $screen-sm) {
         background-size: 100%;
         background-attachment: scroll;
+        padding-bottom: 200px;
     }
     background-repeat: repeat;
     background-position: center;
@@ -399,8 +401,8 @@ li {
         margin-top: 30px;
         @media screen and (min-width: $screen-sm) {
             display: block;
-            margin-left: 20%;
-            margin-right: 20%;
+            margin-left: 15%;
+            margin-right: 15%;
             padding: 10px;
         }
     }
@@ -536,7 +538,7 @@ li {
     }
 
     .header {
-        padding-top: 30px;
+        padding-top: 50px;
         @media screen and (min-width: $screen-sm) {
             padding-top: 150px;
             h4 {
@@ -550,7 +552,7 @@ li {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: white;
+    background: $white;
     padding-top: 50px;
     padding-bottom: 25px;
     .address {
@@ -569,7 +571,8 @@ li {
     }
 
     .icons {
-        margin-top: 10px;
+        margin-top: 25px;
+        margin-bottom: 20px;
         a {
             text-decoration: none;
             color: black; 
