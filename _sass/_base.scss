@@ -202,7 +202,7 @@ li {
     }
     &.third {
         background: $gold-foil-1-url;
-        height: 200px;
+        height: 220px;
         background-size: 300%;
         background-attachment: fixed;
     }
@@ -221,7 +221,7 @@ li {
 }
 
 .angle-after {
-    @include angle(after, false, 4deg);
+    @include angle(after, false, 5deg);
     top: 40px;
     background: white;
 }
@@ -400,7 +400,7 @@ li {
     background-size: 150%;
     background-attachment: scroll;
     @media screen and (min-width: $screen-sm) {
-        background-size: 100%;
+        background-size: 210%;
         background-attachment: scroll;
         padding-bottom: 200px;
     }
@@ -530,17 +530,40 @@ li {
 }
 
 .call-to-action {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
     text-align: center;
     margin-top: -50px;
 
     p {
-        padding-top: 22px;
         margin-left: 5%;
         margin-right: 5%;
         display: block;
         .emphasis {
             font-size: 25px;
+        }
+    }
+    .top-down {
+            margin-top:55px;
+        }
+
+    h4.border {
+        font-size: 20px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        border: 1px solid black;
+        &:hover {
+            color: black;
+            border: 1px solid $gold;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: $gold;
         }
     }
     
@@ -576,15 +599,30 @@ li {
             margin-right: 5px;
         }
     }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .go-to-top{
+        position: relative;
+        width: 100vw;
+        .up-arrow {
+            position: absolute;
+            bottom: 0;
+            right: 20px;;
+        }
+    }
+    
 }
 
 .footer {
     padding: 10px;
-    background: black;
+    background: $white;
     text-align: center;
+    border-bottom: 5px solid black;
 
     a, p {
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 18px;
         @media screen and (max-width: $screen-sm) {
