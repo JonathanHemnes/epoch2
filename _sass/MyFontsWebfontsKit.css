@@ -1,22 +1,3 @@
----
----
-
-$primary: black ;
-$secondary: gold ;
-$text-white: #ffffff;
-$background-pattern-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN_1.jpg');
-$background-clipped-url: url('{{ site.baseurl }}/img/ECS_CONTACT_BG.png');
-$gold-foil-1-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN_2.jpg');
-$gold-foil-2-url: url('{{ site.baseurl }}/img/ECS_BRAND_PATTERN_3.jpg');
-$find-us: url('{{ site.baseurl }}/img/ECS_FIND_US.jpg');
-$man-jump: url('{{ site.baseurl }}/img/ECS_MAN_JUMP.jpg');
-$gold-weave: url('{{ site.baseurl }}/img/ECS_GOLD_WEAVE.jpg');
-
-body {
-    background: white;
-    font-family: Arquitecta-Book;
-}
-
 /**
  * @license
  * MyFonts Webfont Build ID 3401165, 2017-06-03T16:31:51-0400
@@ -45,12 +26,3 @@ body {
   
 @font-face {font-family: 'Arquitecta-Book';src: url('webfonts/33E5CD_0_0.eot');src: url('webfonts/33E5CD_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33E5CD_0_0.woff2') format('woff2'),url('webfonts/33E5CD_0_0.woff') format('woff'),url('webfonts/33E5CD_0_0.ttf') format('truetype');}
  
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "mixins",
-        "variables",
-        "about"
-;
