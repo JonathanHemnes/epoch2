@@ -184,20 +184,28 @@ li {
 
 .separator {
     height: 150px;
-    background: $gold-foil-1-url;
     background-size: 300%;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
-}
 
-.third-separator {
-    // height: 100px;
-    // background: $gold-foil-2-url;
-    // background-size: 200%;
-    // background-attachment: fixed;
-    // background-repeat: repeat;
-    // background-position: center;
+    &.first{
+        background: $gold-foil-1-url;
+        background-size: 300%;
+        background-attachment: fixed;
+    }
+    &.second {
+        background: $gold-foil-1-url;
+        height: 100px;
+        background-size: 300%;
+        background-attachment: fixed;
+    }
+    &.third {
+        background: $gold-foil-1-url;
+        height: 200px;
+        background-size: 300%;
+        background-attachment: fixed;
+    }
 }
 
 .angle-before {
@@ -207,19 +215,19 @@ li {
 }
 
 .angle-before-flip {
-    @include angle(before, true, 6deg);
+    @include angle(before, true, 4deg);
     top: -40px;
     background: white;
 }
 
 .angle-after {
-    @include angle(after, false, 6deg);
+    @include angle(after, false, 4deg);
     top: 40px;
     background: white;
 }
 
 .angle-after-flip {
-    @include angle(after, true, 6deg);
+    @include angle(after, true, 5deg);
     top: 40px;
     background: white;
 }
@@ -282,7 +290,7 @@ li {
     
     .content {
         margin-left: 5%;
-        margin-right: 3%;
+        margin-right: 4.2%;
         padding-bottom: 15px;
     
         p {
@@ -350,12 +358,12 @@ li {
     } 
 
     .ethos-box {
-        width: 125px;
+        // width: 125px;
         margin-top: 15px;
-        margin-left: 15px;
+        margin-left: 5px;
         margin-right: 15px;
         @media screen and (min-width: $screen-sm) {
-            margin-right: 50px;
+            margin-right: 40px;
             margin-left: 27px;
         }
         img {
@@ -374,6 +382,12 @@ li {
         &.extra-wide {
             width: 150px;
         }
+        &.right-end {
+            margin-right: 0 !important;
+        }
+        &.left-end {
+            margin-left: 0 !important;
+        }
     }
 }
 
@@ -383,15 +397,15 @@ li {
     padding-left: 25px;
     padding-right: 25px;
     background-image: $gold-weave;
-    background-size: 500%;
-    background-attachment: fixed;
+    background-size: 150%;
+    background-attachment: scroll;
     @media screen and (min-width: $screen-sm) {
         background-size: 100%;
         background-attachment: scroll;
         padding-bottom: 200px;
     }
     background-repeat: repeat;
-    background-position: center;
+    background-position: top;
 
     .white-back {
         background-color: rgba(216,212,203, 0.7);
@@ -491,6 +505,12 @@ li {
             .boxed-content {
                 display: none;
             }
+            &.right-end {
+                margin-right: 0 !important;
+            }
+            &.left-end {
+                margin-left: 0 !important;
+            }
         }
     }
 
@@ -510,20 +530,9 @@ li {
 }
 
 .call-to-action {
-    margin-top: -150px;
-    z-index: 1;
-    position: relative;
-    background-image: $background-clipped-url;
-    background-size: 100vw;
     padding-bottom: 100px;
-    @media screen and (max-width: $screen-sm) {
-        background-size: 400%;
-        margin-top: -75px;
-    }
-
-    background-repeat: no-repeat;
-    background-position: top;
     text-align: center;
+    margin-top: -50px;
 
     p {
         padding-top: 22px;
@@ -532,16 +541,6 @@ li {
         display: block;
         .emphasis {
             font-size: 25px;
-        }
-    }
-
-    .header {
-        padding-top: 50px;
-        @media screen and (min-width: $screen-sm) {
-            padding-top: 150px;
-            h4 {
-                margin-top: 40px;
-            }
         }
     }
     
